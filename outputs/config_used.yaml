@@ -1,0 +1,32 @@
+analysis:
+  node_counts:
+  - 10
+  - 20
+  - 30
+  - 50
+  num_repeater_tests: 100
+  num_simulations: 200
+  num_users_pki: 25
+  trials_per_size: 5
+network:
+  distance_range: !!python/tuple
+  - 10
+  - 100
+  num_nodes: 15
+  prob_edge: 0.3
+  quantum_node_ratio: 0.4
+output:
+  output_dir: ./outputs
+  plot_dpi: 300
+  plot_format: png
+  save_csv: true
+  save_plots: true
+simulation:
+  classical_packet_loss_rate: 0.001
+  classical_processing_delay: 0.0001
+  decoherence_rate: 0.01
+  entanglement_success_base: 0.8
+  fiber_refractive_index: 1.46
+  no_cloning_violation_rate: 0.05
+  quantum_processing_delay: 0.001
+  reliability_trials: 20

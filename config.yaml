@@ -1,0 +1,33 @@
+# Default configuration for quantum network simulation
+
+network:
+  num_nodes: 12
+  quantum_node_ratio: 0.4
+  prob_edge: 0.3
+  distance_range: [10, 100]
+
+simulation:
+  decoherence_rate: 0.01
+  entanglement_success_base: 0.8
+  classical_packet_loss_rate: 0.001
+  no_cloning_violation_rate: 0.05
+  reliability_trials: 20
+  
+  # Latency parameters
+  fiber_refractive_index: 1.46
+  quantum_processing_delay: 0.001
+  classical_processing_delay: 0.0001
+
+analysis:
+  node_counts: [10, 20, 30, 50]
+  trials_per_size: 5
+  num_simulations: 500
+  num_repeater_tests: 100
+  num_users_pki: 25
+
+output:
+  output_dir: "./outputs"
+  save_plots: true
+  save_csv: true
+  plot_format: "png"
+  plot_dpi: 300

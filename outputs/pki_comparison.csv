@@ -1,0 +1,4 @@
+Method,Total Keys,Keys per User,Scalability,Pros,Cons
+pairwise,300,24,O(n²),Perfect forward secrecy; No single point of failure,Poor scalability; High key management overhead
+KDC,25,1,O(n),Excellent scalability; Simple key management,Single point of failure; KDC must be trusted
+hierarchical,55,5,O(√n),Balance between security and scalability; Partial compromise containment,More complex than KDC; Inter-group communication overhead
