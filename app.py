@@ -698,12 +698,12 @@ def main():
     
     # Main content tabs
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+        "🔐 Security Analysis",
         "🌐 Network Topology", 
         "📊 Link Analysis", 
         "🔬 Quantum Effects",
         "🔄 Message Routing", 
-        "📈 Performance Analysis",
-        "🔐 Security Analysis"
+        "📈 Performance Analysis"
     ])
     
     with tab1:
