@@ -706,7 +706,7 @@ def main():
         "📈 Performance Analysis"
     ])
     
-    with tab1:
+    with tab2:
         st.markdown('<h2 class="section-header">Network Topology</h2>', unsafe_allow_html=True)
         
         if st.session_state.network:
@@ -744,7 +744,7 @@ def main():
                            color_discrete_map={'Quantum': '#ff6b6b', 'Classical': '#4ecdc4'})
             st.plotly_chart(fig_pie, use_container_width=True)
     
-    with tab2:
+    with tab3:
         st.markdown('<h2 class="section-header">Link Analysis</h2>', unsafe_allow_html=True)
         
         if st.session_state.network and st.session_state.link_sim:
@@ -918,7 +918,7 @@ def main():
                             )
                             st.plotly_chart(fig_scatter, use_container_width=True)
     
-    with tab3:
+    with tab4:
         st.markdown('<h2 class="section-header">Quantum Networking Effects</h2>', unsafe_allow_html=True)
         
         if st.session_state.network and st.session_state.link_sim:
@@ -1321,7 +1321,7 @@ def main():
                         - Make quantum networks practically feasible
                         """)
     
-    with tab4:
+    with tab5:
         st.markdown('<h2 class="section-header">Message Routing</h2>', unsafe_allow_html=True)
         
         if st.session_state.network and st.session_state.router:
@@ -1408,7 +1408,7 @@ def main():
                 else:
                     st.warning("Source and destination nodes must be different!")
 
-    with tab5:
+    with tab6:
         st.markdown('<h2 class="section-header">Performance Analysis</h2>', unsafe_allow_html=True)
         
         if st.session_state.network and st.session_state.router:
@@ -1489,7 +1489,7 @@ def main():
                                                       title="Path Length Distribution")
                                 st.plotly_chart(fig_hist, use_container_width=True)
 
-    with tab6:
+    with tab1:
         st.markdown('<h2 class="section-header">Post-Quantum Key Exchange Systems (2030)</h2>', unsafe_allow_html=True)
         
         st.markdown("""
